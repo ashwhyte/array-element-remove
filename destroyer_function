@@ -1,0 +1,23 @@
+function destroyer(arr) {
+  
+  var argumentsArray = arguments;
+  var newArr = [];
+  var num = true;
+  
+  newArr = arr.filter(function (value) {
+    
+    for (var i = 1; i < (argumentsArray.length); i++) {
+        
+      num = (value != argumentsArray[i]);
+      
+      if (!num) {
+        return num;
+      }
+    }
+    
+    return num;
+    
+  });
+  
+  return newArr;
+}
